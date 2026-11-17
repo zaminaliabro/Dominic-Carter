@@ -152,7 +152,7 @@ export default function BlogPage() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center" data-reveal>
           <a
             href={`${ORIGINAL}/dominic-carter/page/2/`}
             className="inline-block rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold transition hover:bg-ink hover:text-white"

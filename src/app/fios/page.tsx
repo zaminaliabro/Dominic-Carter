@@ -36,10 +36,9 @@ export default function FiosPage() {
           {VIDEOS.map((v, i) => (
             <article
               key={v.id}
-              data-reveal
               className={`grid items-center gap-8 md:grid-cols-[1.4fr_1fr] ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}
             >
-              <div className="relative aspect-video overflow-hidden rounded-2xl bg-ink shadow-xl ring-1 ring-black/5 transition duration-500 hover:shadow-2xl hover:shadow-accent/25">
+              <div data-reveal={i % 2 ? "right" : "left"} className="relative aspect-video overflow-hidden rounded-2xl bg-ink shadow-xl ring-1 ring-black/5 transition duration-500 hover:shadow-2xl hover:shadow-accent/25">
                 <iframe
                   src={`https://www.youtube-nocookie.com/embed/${v.id}${v.start ? `?start=${v.start}` : ""}`}
                   title={v.title}
@@ -49,7 +48,7 @@ export default function FiosPage() {
                   className="absolute inset-0 h-full w-full"
                 />
               </div>
-              <div>
+              <div data-reveal={i % 2 ? "left" : "right"}>
                 <p className="text-gradient font-serif text-5xl font-bold">0{i + 1}</p>
                 <h2 className="mt-2 font-serif text-3xl font-bold">{v.title}</h2>
                 <p className="mt-3 text-lg leading-relaxed text-muted">{v.text}</p>

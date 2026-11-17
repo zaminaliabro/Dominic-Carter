@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0a0f1e;
-  --ink-soft: #151c30;
-  --paper: #faf7f2;
-  --accent: #e11d48;
-  --accent-2: #f97316;
-  --gold: #f5b942;
-  --muted: #475569;
+  --ink: #0b1530;
+  --ink-soft: #14214a;
+  --paper: #f7f5f0;
+  --accent: #c8102e;
+  --accent-2: #d4a017;
+  --gold: #e6b93b;
+  --muted: #4a5568;
 }
 
 @theme inline {
@@ -36,7 +36,7 @@ body {
 /* ---------- Text & surfaces ---------- */
 
 .text-gradient {
-  background: linear-gradient(100deg, #fb7185 0%, var(--accent-2) 50%, var(--gold) 100%);
+  background: linear-gradient(100deg, #ef4444 0%, #e0573a 35%, var(--gold) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -46,13 +46,13 @@ body {
 
 .bg-hero {
   background:
-    radial-gradient(60rem 40rem at 85% -10%, rgb(225 29 72 / 0.28), transparent 60%),
-    radial-gradient(50rem 35rem at -10% 110%, rgb(249 115 22 / 0.16), transparent 60%),
-    linear-gradient(180deg, #0a0f1e 0%, #0e1528 100%);
+    radial-gradient(60rem 40rem at 85% -10%, rgb(200 16 46 / 0.30), transparent 60%),
+    radial-gradient(50rem 35rem at -10% 110%, rgb(212 160 23 / 0.14), transparent 60%),
+    linear-gradient(180deg, #0b1530 0%, #0f1c3d 100%);
 }
 
 .bg-accent-gradient {
-  background: linear-gradient(120deg, var(--accent) 0%, #be123c 45%, var(--accent-2) 100%);
+  background: linear-gradient(120deg, var(--accent) 0%, #8f0b21 55%, #0b1530 100%);
   background-size: 200% 200%;
   animation: gradient-pan 10s ease-in-out infinite alternate;
 }
@@ -70,9 +70,9 @@ body {
 .btn-primary {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  background: linear-gradient(120deg, var(--accent), #8f0b21);
   color: #fff;
-  box-shadow: 0 10px 30px -10px rgb(225 29 72 / 0.6);
+  box-shadow: 0 10px 30px -10px rgb(200 16 46 / 0.55);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .btn-primary::after {
@@ -85,7 +85,7 @@ body {
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 36px -12px rgb(225 29 72 / 0.75);
+  box-shadow: 0 16px 36px -12px rgb(200 16 46 / 0.7);
 }
 .btn-primary:hover::after {
   transform: translateX(120%);
@@ -107,8 +107,8 @@ body {
 .card {
   position: relative;
   background: #fff;
-  border: 1px solid rgb(10 15 30 / 0.06);
-  box-shadow: 0 1px 2px rgb(10 15 30 / 0.04);
+  border: 1px solid rgb(11 21 48 / 0.06);
+  box-shadow: 0 1px 2px rgb(11 21 48 / 0.04);
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
 }
 .card::before {
@@ -124,8 +124,8 @@ body {
 }
 .card:hover {
   transform: translateY(-6px);
-  border-color: rgb(225 29 72 / 0.2);
-  box-shadow: 0 24px 50px -20px rgb(10 15 30 / 0.25);
+  border-color: rgb(200 16 46 / 0.2);
+  box-shadow: 0 24px 50px -20px rgb(11 21 48 / 0.25);
 }
 .card:hover::before {
   transform: scaleX(1);

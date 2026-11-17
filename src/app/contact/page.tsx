@@ -40,7 +40,7 @@ export default function ContactPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">More from Dominic</p>
             <ul className="mt-4 divide-y divide-black/5">
               {LINKS.map((l) => (
-                <li key={l.url}>
+                <li key={l.url} data-reveal="right">
                   <a
                     href={l.url}
                     target="_blank"

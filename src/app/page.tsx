@@ -127,7 +127,7 @@ export default function Home() {
 
           <div className="animate-fade-in delay-2 relative mx-auto w-full max-w-sm">
             <div className="animate-float">
-              <div className="absolute -inset-4 rotate-3 rounded-[2rem] bg-gradient-to-br from-accent via-rose-600 to-accent-2 opacity-90 blur-[1px]" />
+              <div className="absolute -inset-4 rotate-3 rounded-[2rem] bg-gradient-to-br from-accent via-red-800 to-accent-2 opacity-90 blur-[1px]" />
               <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-ink-soft shadow-2xl ring-1 ring-white/10">
                 <Image
                   src={IMAGES.headshot}

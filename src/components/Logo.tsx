@@ -1,15 +1,15 @@
 import { useId } from "react";
 
-// "DC" monogram + broadcast waves (radio / TV) in the site's rose → orange gradient.
+// "DC" monogram + broadcast waves (radio / TV) in the site's news-red gradient.
 export function LogoMark({ className = "h-10 w-10" }: { className?: string }) {
   const id = useId().replace(/:/g, "");
   return (
     <svg viewBox="0 0 48 48" className={className} role="img" aria-label="Dominic Carter logo">
       <defs>
         <linearGradient id={`g${id}`} x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#f43f5e" />
-          <stop offset="0.55" stopColor="#e11d48" />
-          <stop offset="1" stopColor="#f97316" />
+          <stop offset="0" stopColor="#e11d3a" />
+          <stop offset="0.55" stopColor="#c8102e" />
+          <stop offset="1" stopColor="#8f0b21" />
         </linearGradient>
         <linearGradient id={`s${id}`} x1="0" y1="0" x2="0" y2="48" gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor="#fff" stopOpacity="0.25" />
@@ -23,7 +23,7 @@ export function LogoMark({ className = "h-10 w-10" }: { className?: string }) {
         <path d="M35.5 8a4.5 4.5 0 0 1 4.5 4.5" opacity="0.95" />
         <path d="M35.5 3.5a9 9 0 0 1 9 9" opacity="0.55" />
       </g>
-      <circle cx="35.5" cy="12.5" r="1.9" fill="#f5b942" />
+      <circle cx="35.5" cy="12.5" r="1.9" fill="#e6b93b" />
       {/* monogram */}
       <text
         x="6"
@@ -37,7 +37,7 @@ export function LogoMark({ className = "h-10 w-10" }: { className?: string }) {
         DC
       </text>
       {/* underline accent */}
-      <rect x="7" y="40" width="16" height="2.2" rx="1.1" fill="#f5b942" />
+      <rect x="7" y="40" width="16" height="2.2" rx="1.1" fill="#e6b93b" />
     </svg>
   );
 }

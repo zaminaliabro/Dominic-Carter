@@ -110,7 +110,7 @@ export default function PressPage() {
             Featured in
           </span>
           {OUTLET_LOGOS.map((o) => (
-            <div key={o.name} className="relative h-10 w-36 opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0">
+            <div key={o.name} data-reveal className="relative h-10 w-36 opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0">
               <Image src={o.src} alt={o.name} fill sizes="144px" className="object-contain" />
             </div>
           ))}
