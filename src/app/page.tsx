@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SectionLabel } from "@/components/ui";
+import CountUp from "@/components/CountUp";
 const IMAGES = {
   headshot: "/images/headshot.jpg",
   book: "/images/book-cover.png",
@@ -151,7 +152,9 @@ export default function Home() {
           <dl className="mx-auto grid max-w-6xl grid-cols-2 gap-y-8 px-5 py-10 md:grid-cols-4">
             {STATS.map((s, i) => (
               <div key={s.label} className={`animate-fade-up px-2 delay-${i + 2}`}>
-                <dt className="text-gradient font-serif text-4xl font-bold sm:text-5xl">{s.value}</dt>
+                <dt className="text-gradient font-serif text-4xl font-bold sm:text-5xl">
+                  <CountUp value={s.value} delay={450 + i * 250} />
+                </dt>
                 <dd className="mt-1 text-sm text-slate-400">{s.label}</dd>
               </div>
             ))}
